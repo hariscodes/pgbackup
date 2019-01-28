@@ -5,7 +5,7 @@ from pgbackup import cli
 url = "postgres://bob:password@example.com:5432/db_one"
 
 @pytest.fixture
-def ,arser():
+def parser():
     return cli.create_parser()
 
 def test_parser_without_driver(parser):
